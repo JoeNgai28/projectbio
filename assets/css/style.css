@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Prosto One', cursive;
+ }
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
