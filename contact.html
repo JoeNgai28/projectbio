@@ -1,39 +1,40 @@
 <!doctype html>
 <html>
-
-<head>
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 <body>
-    <header align=left>
-        <a href="index.html">Home</a> |
-        <a href="bio.html">Bio</a> |
-        <a href="contact.html">Contact</a>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <div id="container">
+        <div id="container">
+            <h1>Don't leave without say Hello :)</h1><br>
         <form>
-        <h2>Don't leave without say Hello :)</h2>
             <p>Hello Joseph, <br><br>
                My name is &nbsp;
                 <input type="text" name="fn" value placeholder="*First" required>
-                <input type="text" name="ln" value placeholder="*Last" required><br><br>
+                <input type="text" name="ln" value placeholder="*Last" required><br>
                 and I am with &nbsp; 
                 <input type="text" name="org" value placeholder="Organization">.&nbsp;&nbsp;
-                I would like to discuss<br><br>
-               <textarea rows="5" cols="50" value placeholder="What is on your mind?"></textarea>
-                <br><br>
+                I would like to discuss<br>
+               <textarea rows="5" cols="40" value placeholder="What is on your mind?"></textarea>
+                <br>
                 You can reach me at &nbsp; 
                 <input type="email" name="email" value placeholder="*Email" required>
                 or &nbsp; 
-                <input type="tel" name="phone" value placeholder="Phone"><br><br>
-                to get the conversation started.<br><br>
+                <input type="tel" name="phone" value placeholder="Phone"><br>
+                to get the conversation started.<br>
                 Thanks!.
             </p><br>
-            
-        <p>I heard about you from</p>
+
+        <p>I heard of you from a</p>
         <label>
             <input type="checkbox" name="referral" value="friend">Friend<br>
             <input type="checkbox" name="referral" value="colleague">Colleague<br>
@@ -48,8 +49,13 @@
             eat to live<br><br>
         </label>
         <input type="submit" name="submitthis" value = "Submit">
-        </form>
+            </form>
     </div>
 </body>
-
+               <footer>
+                <p>
+                <a href="index.html">Home</a> |
+                <a href="contact.html">Contact</a>
+                </p>
+            </footer>
 </html>
