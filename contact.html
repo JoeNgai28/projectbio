@@ -14,26 +14,39 @@
     </header>
 
     <div id="container">
-        <h1>Get in Touch</h1>
-            <label>
+        <form>
+        <h2>Don't leave without say Hello :)</h2>
+            <p>Hello Joseph, <br><br>
+               My name is &nbsp;
                 <input type="text" name="fn" value placeholder="*First" required>
                 <input type="text" name="ln" value placeholder="*Last" required><br><br>
+                and I am with &nbsp; 
+                <input type="text" name="org" value placeholder="Organization">.&nbsp;&nbsp;
+                I would like to discuss<br><br>
+               <textarea rows="5" cols="50" value placeholder="What is on your mind?"></textarea>
+                <br><br>
+                You can reach me at &nbsp; 
                 <input type="email" name="email" value placeholder="*Email" required>
+                or &nbsp; 
                 <input type="tel" name="phone" value placeholder="Phone"><br><br>
-                <input type="text" name="org" value placeholder="Organization"><br>
-            </label>
-            <p>*Requried </p>
-        <p>How did you find me?</p>
+                to get the conversation started.<br><br>
+                Thanks!.
+            </p><br>
+            
+        <p>I heard about you from</p>
         <label>
-            <input type="radio" name="referral" value="friendcolleague">Friend/Colleague<br>
-            <input type="radio" name="referral" value="internet">Internet<br>
-            <input type="radio" name="referral" value="linkedin">LinkedIn<br>
-            <input type="radio" name="referral" value="linkedin">Other <input type="text" name="other" required><br>
-        </label>
+            <input type="checkbox" name="referral" value="friend">Friend<br>
+            <input type="checkbox" name="referral" value="colleague">Colleague<br>
+            <input type="checkbox" name="referral" value="linkedin">LinkedIn<br>
+            <input type="checkbox" name="referral" value="linkedin">Other <input type="text" name="other" required><br>
+        </label><br>
         <br>
-        <label>Message<br>
-            <textarea rows="5" cols="30" value placeholder="What is on your mind?"></textarea>
-        </label><br><br>
+        <label> I also...<br>
+            <input type="radio" name="eat" value="love">
+            Live to eat !
+            <input type="radio" name="eat" value="nolove">
+            eat to live<br><br>
+        </label>
         <input type="submit" name="submitthis" value = "Submit">
         </form>
     </div>
