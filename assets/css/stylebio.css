@@ -3,12 +3,11 @@
 * {
     box-sizing: border-box;
     font-family: 'Aldrich', sans-serif;
-    padding: 0;
-    margin-bottom: 0;
+
  }
 
 header, footer{
-    position: relative;
+    position: a;
     padding: 10px;
 }
 
@@ -31,13 +30,13 @@ nav li {
     display: inline-block;
 }
 
-nav a, input[type="submit"] {
+nav a {
     font-size: 15px;
-    background: #F1E9DB;
+    background: grey;
     margin-left: 10px;
     padding: 10px;
     text-decoration: none;
-    color: #716A5C;
+    color: yellow;
     border-radius: 30px;
 }
 
@@ -46,9 +45,15 @@ nav a:hover, input[type="submit"]:hover{
     color: #F1E9DB;
 }
 body {
-    background-color: black; 
+    background-color: black;
+    height: auto;
     }
 
+body img {
+    width: 250px;
+    ;
+
+}
 
 h1, h2,  {
     font-family: 'Press Start 2P', cursive;
