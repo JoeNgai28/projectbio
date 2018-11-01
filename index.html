@@ -4,6 +4,40 @@
     <title>HomePage</title>
      <link rel="stylesheet" href="assets/css/stylebio.css">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale-1, user-scalable=no">
+    <style>
+
+ 
+ 
+.img_wrap {
+margin: 10px;
+display: inline-flex;
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+ 
+.img_description {
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: red;
+  visibility: hidden;
+  opacity: 0;
+font-size: 20px;
+Text-align:center;
+ 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+</style>
 </head>
     <body>
      <header>
@@ -15,13 +49,23 @@
             </ul>
         </nav>
     </header>
-        <div class="columns">
-         <img src="assets/img/Focus.jpg" style="width:100%">
-            <div class="textblk1">Focus</div>
-         <img src="assets/img/Determination.jpg">
-            <div class="textblk2">Determination</div>
-         <img src="assets/img/results.jpg">
-            <div class="textblk3">Results</div>
-        </div>
+        <div class="img_wrap">
+      <img class="img_img" 
+     
+    src="assets/img/Focus.jpg" />
+      <p class="img_description">Focus</p>
+    </div>
+ <div class="img_wrap">
+      <img class="img_img" 
+     
+    src="assets/img/Determination.jpg" />
+      <p class="img_description">Determination</p>
+    </div>
+ <div class="img_wrap">
+      <img class="img_img" 
+     
+    src="assets/img/results.jpg" />
+      <p class="img_description">Results</p>
+    </div>
         </body>
 </html>

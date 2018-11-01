@@ -1,24 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-div {
-    background-color: yellow;
-    padding: 20px;
-    display: none;
-}
+    <style>
+     
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+     
+     
+    .img_wrap {
+    display: flex;
+      position: relative;
+      height: 210px;
+      width: 257px;
+    }
+     
+    .img_description {
+      position: absolute;
+      top: 70%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: red;
+      visibility: hidden;
+      opacity: 0;
+    font-size: 50px;
+    Text-align:center;
+     
+      /* transition effect. not necessary */
+      transition: opacity .2s, visibility .2s;
+    }
+     
+    .img_wrap:hover .img_description {
+      visibility: visible;
+      opacity: 1;
+    }
+     
+    </style>
+     
+    <div class="img_wrap">
+      <img class="img_img" 
+     
+    src="assets/img/Focus.jpg" />
+      <p class="img_description">Focus</p>
+    </div>
+ <div class="img_wrap">
+      <img class="img_img" 
+     
+    src="assets/img/Determination.jpg" />
+      <p class="img_description">Determination</p>
+    </div>
+ <div class="img_wrap">
+      <img class="img_img" 
+     
+    src="assets/img/results.jpg" />
+      <p class="img_description">Results</p>
+    </div>
     
-span:hover + div {
-    display: block;
-}
-</style>
-</head>
-<body>
-
-<span>Hover over me!</span>
-<div>I will show on hover</div>
-
-     <li><span>SDCL</span>
-         <div class="hover">Software Dev life</div></li>
-</body>
-</html>
