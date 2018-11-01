@@ -7,7 +7,7 @@
  }
 
 header, footer{
-    position: a;
+    position: relative;
     padding: 10px;
 }
 
@@ -40,59 +40,51 @@ nav a {
     border-radius: 30px;
 }
 
-nav a:hover, input[type="submit"]:hover{
+nav a:hover {
     background: #48ACF0;
     color: #F1E9DB;
 }
 body {
     background-color: black;
-    height: auto;
+    display: block;
     }
 
-body img {
-    width: 250px;
-    ;
 
-}
-
-h1, h2,  {
+h1, p{
     font-family: 'Press Start 2P', cursive;
-    font-size: 18px;
-    text-align: center
+    font-size: 12px;
+    color: yellowgreen;
+    text-align: center;
 }
 
-
-
-input, textarea{
-    background: transparent;
-    border-bottom-color: beige;
-    border-left: none;
-    border-top: none;
-    border-right: none;
+.flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-input [type="submit"]{
-    
-}
-#container {
-    max-width: 900px;
-    max-height: auto;
-    margin: 20px auto;
-    border: 1px solid: #000;
-    align-content: center;
+.flexcontainer > div {
+    width: 20%;
+    margin: 5px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
 }
 
-form {
-    margin-left: 100px;
-    margin-right: 60px;
-    width: auto;
-    
-}
-
-#biobackground {
-    background-color: black;
-}
-
-.bioprofilpic {
+.flexcontainer img {
     border-radius: 50%;
+    width: 220px;
+}
+        
+.bioprofilepic  {
+    border-radius: 50%;
+    display: block;
+    margin-top: 100px;
+    padding-top: 100;
+
+    
+
+}
+
+.bioprofilepic img {
+    align-content: center;
 }
