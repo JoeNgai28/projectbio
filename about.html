@@ -1,14 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-    <title>About</title>
-    </head>
+<head>
+<style>
+div {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+}
+    
+span:hover + div {
+    display: block;
+}
+</style>
+</head>
+<body>
 
-        <body>
-            <h1> Joe Ngai</h1>
-            <div>
-                <p>
-                </p>
-            </div>
-        </body>
+<span>Hover over me!</span>
+<div>I will show on hover</div>
+
+     <li><span>SDCL</span>
+         <div class="hover">Software Dev life</div></li>
+</body>
 </html>

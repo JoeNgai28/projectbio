@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Aldrich', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 
  }
 
@@ -31,6 +31,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'Aldrich', sans-serif;
     font-size: 15px;
     background: grey;
     margin-left: 10px;
@@ -49,12 +50,16 @@ body {
     display: block;
     }
 
-
-h1, p, li {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
+h1 { 
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+}
+ p, li {
+    font-size: 20px;
     color: yellowgreen;
     text-align: center;
+    list-style: none;
 }
 
 div ul {
@@ -66,8 +71,8 @@ div ul {
 }
 
 .flexcontainer li {
-    line-height: 12px;
-    padding: 10%;
+    line-height: 20px;
+    padding: 20%;
 }
 .flexcontainer > div {
     width: 20%;
@@ -81,6 +86,17 @@ div ul {
     border-radius: 50%;
     width: 220px;
 }
+
+.hover {
+    background-color: blue;
+    font-size: 12px;
+    padding: 20px;
+    display: none;
+}
+    
+span:hover + .hover {
+    display: block;
+}
         
 span: hover + div {
     display: block;
@@ -91,10 +107,44 @@ span: hover + div {
     margin-top: 100px;
     padding-top: 100;
 
-    
-
 }
 
 .bioprofilepic img {
     align-content: center;
+}
+
+.columns {
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Bottom right text */
+.columns, .textblk1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.columns,.textblk2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.columns,.textblk3 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
