@@ -46,15 +46,7 @@ nav a:hover, input[type="submit"]:hover{
     color: #F1E9DB;
 }
 body {
-    background-image: linear-gradient(
-        rgba(70,99,101,0),
-        rgba(70,99,101,0.6)), 
-        url("../img/contactbackground1.png");
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-
- 
+    background-color: black; 
     }
 
 
